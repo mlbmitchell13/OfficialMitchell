@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Blog - Official Mitchell.com</title>
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette&display=swap" rel="stylesheet">
+  </head>
+
+  <body style="animation: fadeIn 2.5s">
+
+    <!-- Header -->
+
+    <header class="primary-header container group">
+
+      <h1 class="logo">
+        <a href="home.html">
+          <font size="8"; style="color: transparent;">Official </font><br> 
+          <font size="8"; style="font-family: 'Courgette', cursive; color: white; ">&ensp;&ensp;&ensp;Mitchell</font><font size="3"; style="font-family: 'Courgette', cursive; color: white";>.com</font>
+        </a>
+      </h1>
+
+      <h3 class="tagline">Created/Designed by Mitchell Peters</h3>
+
+      <nav class="nav primary-nav">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="biography.html">Biography</a></li>
+          <li><a href="jerseys.html">Jerseys</a></li>
+          <li><a href="skills_projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <!-- Lead -->
+
+    <section class="row-alt">
+      <div class="lead container">
+
+        <h1 class="page_title_shadow">Blog</h1>
+
+        <p>Welcome to the blog section of my website! Here you will find posts about topics I find interesting enough to share with the world.</p>
+
+      </div>
+    </section>
+
+    <section class="row">
+      <div class="grid blogBorder">
+        <section class="speaker" id="mitchell-peters">
+          <div class="col-2-3">
+            <h2>My First Software Internship!</h2>
+    
+            <p> My first software internship is one that I did not expect to go the way that it did. Initially, I was hired as an automation engineering intern who was expected to only learn about SaltStack and Splunk. To my surprise, eventually Python and HTML/CSS came into play as well.<br><br>
+
+			During the first month, I was introduced to servers and server management. The major server management system First Data uses is SaltStack. SaltStack, in simple terms, is having, what is called a "master" server, that talks and sends commands to other servers called "minions.” Minions, which are also called agents, are connected to the master by exchanging private keys and listening on ports 4505/4506. They are each installed on multiple machines. An example of how the master communicates to its minions is when you want to update/install thousands of servers at once rather than one-by-one. The master would use send Salt command to a certain minion(s) and have them install/update themselves depending on their operating system. This also leads me to my next point. SaltStack has the ability to manage servers of all operating systems. Whether it be Windows or Linux/Linux Flavors, SaltStack makes it relatively easy to manage thousands of servers at once, hence automation engineering.
+			<br><br>
+
+			Entering the second month, the interns and I were given a project by the CTO Mike Manos. This project entailed developing code that used the Twitter API (Tweepy) to grab tweets, run them through sentiment analysis, and find negative tweets about the company. This information is useful because it allows the company to see issues clients are having outside of their customer service line. A lot of issues that clients have are presented through social media and by developing code to catch those negative tweets, it allowed the company's L1 and L2 teams to respond faster and increase overall customer satisfaction.
+			<br><br>
+
+			How does HTML/CSS and Python come into play? The CTO’s project was created using Tweepy which requires the usage of Python. With Python, we created a few scripts to pull tweets from First Data clients such as Walmart, Keller Williams, etc. HTML/CSS was used to develop the User Interface for the software. Mike wanted the interns to create a dashboard of some sort to display the tweet data pulled in. We decided to us HTML/CSS so it would be accessible from the internet and be displayed as a webpage.<br><br>
+
+			Overall, my internship with First Data was an incredible opportunity to not only learn some new skills, but also build upon the ones I already have. Very excited to see where I end up next!
+
+
+
+            </p>
+          </div><!--
+      --><aside class="col-1-3">
+            <div class="firstInternship">
+              <img src="assets/images/blog/Firstdata.png" alt="First Data and Fiserv">
+              <br><br>
+              <img src="assets/images/blog/internship.jpg" alt="First Data and Fiserv">
+            </div>
+          </aside>
+        </section>
+
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="primary-footer container group">
+
+      <small>&copy; OfficialMitchell.com</small>
+
+      <nav class="nav">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="biography.html">Biography</a></li>
+          <li><a href="jerseys.html">Jerseys</a></li>
+          <li><a href="skills_projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </nav>
+
+    </footer>
+
+  </body>
+</html>

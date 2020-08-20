@@ -1,0 +1,574 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+.mainpage {
+  background: #466368;
+  background: linear-gradient(to right bottom,  #293f50 20%, #648880);
+  background-size: 1500px;
+  animation: fadeIn 2.5s;
+}
+
+@media only screen and (min-width: 1000px){
+  .mainpage {
+        background: #293f50;
+        background-position: relative;
+        background: -webkit-radial-gradient(#648880, #293f50 40%);
+        background:    -moz-radial-gradient(#648880, #293f50 40%);
+        background:       radial-gradient(#648880, #293f50 40%);
+        -webkit-animation-name: example;
+        -webkit-animation-duration: 4s;
+        -webkit-animation-iteration-count: 3;
+        animation: fadeIn 2.5s, backGroundAnimate 2s infinite 2s;
+      }
+
+      
+      @-webkit-keyframes backGroundAnimate {
+      0%   {background: radial-gradient(#648880, #293f50 40%);}
+      5%   {background: radial-gradient(#648880, #293f50 41%);}
+      10%  {background: radial-gradient(#648880, #293f50 42%);}
+      15%  {background: radial-gradient(#648880, #293f50 43%);}
+      20%  {background: radial-gradient(#648880, #293f50 44%);}
+      25%  {background: radial-gradient(#648880, #293f50 45%);}
+      30%  {background: radial-gradient(#648880, #293f50 46%);}
+      35%  {background: radial-gradient(#648880, #293f50 47%);}
+      40%  {background: radial-gradient(#648880, #293f50 48%);}
+      45%  {background: radial-gradient(#648880, #293f50 49%);}
+      50%  {background: radial-gradient(#648880, #293f50 50%);}
+      55%  {background: radial-gradient(#648880, #293f50 49%);}
+      60%  {background: radial-gradient(#648880, #293f50 48%);}
+      65%  {background: radial-gradient(#648880, #293f50 47%);}
+      70%  {background: radial-gradient(#648880, #293f50 46%);}
+      75%  {background: radial-gradient(#648880, #293f50 45%);}
+      80%  {background: radial-gradient(#648880, #293f50 44%);}
+      85%  {background: radial-gradient(#648880, #293f50 43%);}
+      90%  {background: radial-gradient(#648880, #293f50 42%);}
+      95%  {background: radial-gradient(#648880, #293f50 41%);}
+      100% {background: radial-gradient(#648880, #293f50 40%);}
+
+    }
+}
+
+
+body {
+  background: #466368;
+  background: linear-gradient(to right bottom,  #293f50 20%, #648880);
+  color: #888;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+
+
+.page_title_shadow {
+  text-shadow: 0px 3px 2px rgba(0, 0, 0, .3);
+}
+
+.home_shadow:hover {
+  box-shadow: -5px 5px;
+}
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container,
+.grid {
+  margin: 0 auto;
+  width: 960px;
+}
+.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.grid,
+.col-1-3,
+.col-2-3,
+.col-1-4 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-1-3,
+.col-2-3,
+.col-1-4  {
+  display: inline-block;
+  vertical-align: top;
+}
+.col-1-3 {
+  width: 33.33%;
+}
+.col-2-3 {
+  width: 66.66%;
+}
+.col-1-4 {
+  width: 25%;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+
+/*
+  ========================================
+  Rows
+  ========================================
+*/
+
+.row,
+.row-alt {
+  min-width: 960px;
+}
+.row {
+  background: #fff;
+  padding: 66px 0 44px 0;
+}
+.row-alt {
+  background: #cbe2c1;
+  background: -webkit-linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background:    -moz-linear-gradient(to right, #a1d3b0, #f6f1d3);
+  background:         linear-gradient(to right, #a1d3b0, #f6f1d3);
+  padding: 44px 0 22px 0;
+}
+
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+h1, h2, h3, h4 {
+  color: #648880;
+}
+h1, h3, h4, h5, p {
+  margin-bottom: 22px;
+}
+h1 {
+  font-size: 42px;
+  line-height: 44px;
+}
+h2 {
+  font-size: 24px;
+  line-height: 44px;
+}
+h3 {
+  font-size: 21px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  color: #a9b2b9;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+strong {
+  font-weight: 400;
+}
+cite,
+em {
+  font-style: italic;
+}
+
+/*
+  ========================================
+  Leads
+  ========================================
+*/
+
+.lead {
+  text-align: center;
+}
+.lead p {
+  font-size: 21px;
+  line-height: 33px;
+}
+
+/*
+  ========================================
+  Links
+  ========================================
+*/
+
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+a:hover {
+  color: #a9b2b9;
+}
+p a {
+  border-bottom: 1px solid #dfe2e5;
+}
+.primary-header a,
+.primary-footer a {
+  -webkit-text-stroke-color: #fff;
+}
+.primary-header a:hover,
+.primary-footer a:hover {
+  text-shadow: -3px 6px 2px rgba(0, 0, 0, .3);
+  color: #648880;
+
+}
+
+/*
+  ========================================
+  Buttons
+  ========================================
+*/
+
+.btn {
+  align-self: auto;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: .5px;
+  margin: 0;
+  text-transform: uppercase;
+  z-index: 1;
+}
+.btn-alt {
+  border: 1px solid #fff;
+  padding: 10px 30px;
+  z-index: 1;
+}
+.btn-alt:hover {
+  background: #fff;
+  color: #648880;
+  z-index: 1;
+}
+
+.resume_button {
+  border-radius: 2px;
+  color: black;
+  background: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
+  letter-spacing: .5px;
+  margin: 0;
+}
+
+.resume_button_atl {
+  border: 1px solid black;
+  padding: 10px 30px;
+}
+
+.resume_button_atl:hover {
+  background: black;
+  color: white;
+}
+
+
+/*
+  ========================================
+  Primary header
+  ========================================
+*/
+img {
+  height: 100px;
+  width: 50px;
+
+}
+
+.logo {
+  border-top: 4px solid #648880;
+  float: left;
+  font-family: 'Poppins', sans-serif;
+  font-size: 55px;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 44px;
+  padding: 40px 0 22px 0;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+
+}
+.tagline {
+  margin: 66px 0 22px 0;
+  text-align: right;
+}
+.primary-nav a {
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  color: white;
+}
+
+
+/*
+  ========================================
+  Primary footer
+  ========================================
+*/
+
+.primary-footer {
+  color: white;
+  font-size: 14px;
+  padding-bottom: 44px;
+  padding-top: 44px;
+}
+.primary-footer small {
+  float: left;
+  font-weight: 400;
+}
+
+/*
+  ========================================
+  Navigation
+  ========================================
+*/
+
+.nav {
+  text-align: right;
+}
+
+.nav li {
+  display: inline-block;
+  margin: 0 10px;
+  vertical-align: top;
+}
+.nav li:last-child {
+  margin-right: 0;
+}
+
+
+/*
+  ========================================
+  Home
+  ========================================
+*/
+
+.section {
+  position: relative;
+  width: 100%;
+  height: 35vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.section p {
+  position: center;
+  text-align: center;
+  font-size: 36px;
+  line-height: 44px;
+  color: #fff;
+  background: #000;
+  opacity: .7;
+  padding: 30px 80px 30px 80px;
+  z-index: 1;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.hero {
+  color: #fff;
+  line-height: 44px;
+  padding: 22px 80px 66px 80px;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 36px;
+}
+.hero p {
+  font-size: 24px;
+  font-weight: 100;
+}
+.teaser a:hover h3 {
+  color: #a9b2b9;
+}
+
+.teaser img {
+  border-radius: 5px;
+  display: block;
+  margin-bottom: 22px;
+  width: 300px;
+  height: 180px;
+  max-width: 100%;
+}
+
+
+
+/*
+  ========================================
+  Speakers
+  ========================================
+*/
+  
+.speaker-info {
+  border: 1px solid #dfe2e5;
+  border-radius: 5px;
+  margin-top: 88px;
+  padding: 22px 0;
+  text-align: center;
+}
+
+.speaker {
+  margin-bottom: 44px;
+}
+
+.speaker-info img {
+  border-radius: 50%;
+  height: 240px;
+  width: 190px;
+  margin: -66px 0 22px 0;
+  vertical-align: top;
+}
+
+.speaker-info a img{
+  height: 50px;
+  width: 50px;
+  margin-top: 5px;
+}
+
+.speaker-info li {
+  display: inline-block;
+}
+
+/*
+  ========================================
+  Biography
+  ========================================
+*/
+
+.project-video {
+  margin-bottom: 66px;
+}
+.project-description {
+  margin-bottom: 22px;
+}
+.venue-map {
+  height: 264px;
+}
+.favorite {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+/*
+  ========================================
+  Blog
+  ========================================
+*/
+
+.firstInternship img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+  height: 200px;
+}
+
+.blogBorder {
+  border-width:1px;
+  border-style:solid;
+  border-color:#648880;
+  margin-top: 15px;
+  width: 90%;
+}
+
+
+/*
+  ========================================
+  Animation Between Pages
+  ========================================
+*/
+
+ol {
+  list-style-type: circle;
+  list-style-position: inside;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+ }
+
+
+
+
+
